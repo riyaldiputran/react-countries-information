@@ -1,0 +1,98 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default font family and text color */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(71, 71, 71);
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+.mb-5 {
+    margin-bottom: 1.25rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.fs-md-2 {
+    font-size: 1.5rem;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn-outline-secondary {
+    border-color: #6c757d;
+    color: #6c757d;
+}
+
+#countryCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.country-card {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.country-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.popup-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup-languages,
+.popup-continent {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#closePopup {
+    margin-top: 10px;
+}
